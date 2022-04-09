@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap");
+
+:root {
+  --red: #e74c3c;
+  --black: #333;
+  --white: #fff;
+  --light-bg: #f5f5f5;
+  --light-color: #666;
+  --border: 1px solid var(--light-color);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+@font-face {
+  font-family: myPizza;
+  src: url(hotpizza.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+}
+
+html {
+  font-size: 70%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+body {
+  background: var(--light-bg);
+}
+
+section {
+  padding: 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header .flex .logo {
+  font-family: myPizza;
+  font-size: 3rem;
+  color: var(--black);
+}
+
+.header .flex .logo span {
+  font-family: myPizza;
+  color: var(--red);
+}
+
+.header .flex .navbar a {
+  margin: 0 1rem;
+  font-size: 2.2rem;
+  color: var(--black);
+}
+
+.header .flex .navbar a:hover {
+  color: var(--red);
+}
+
+.header .flex .icons div {
+  font-size: 2.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+  margin-left: 1.7rem;
+}
+.header .flex .icons div:hover {
+  color: var(--red);
+}
+
+.header .flex .icons div span {
+  font-size: 1.7rem;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .flex .navbar {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 0, 0 0);
+  }
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 425px) {
+  font-size: 40%;
+}
