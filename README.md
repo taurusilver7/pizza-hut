@@ -5,6 +5,7 @@ A responsive single page Online pizza store using HTML, CSS, JavaScript.
 ## Build
 
 - [fontawesome cdn](https://cdnjs.com/libraries/font-awesome)
+- [clip-arts paths](https://bennettfeely.com/clippy/)
 
 responsive header with toggle menu effect using vanilla javascript.
 responsive account section with login and register form.
