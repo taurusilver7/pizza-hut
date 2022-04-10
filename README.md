@@ -8,7 +8,7 @@ A responsive single page Online pizza store using HTML, CSS, JavaScript.
 - [clip-arts paths](https://bennettfeely.com/clippy/)
 
 - A responsive header with toggle menu effect using javascript.
-  responsive account section with login and register form.
+- A responsive account section with login and register forms.
   responsive orders and shopping cart side bar.
   responsive home section with slider using vanilla javascript.
   responsive about section using css grid.
