@@ -110,6 +110,56 @@ header {
   display: none;
 }
 
+.user-account {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.user-account #close-account {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.user-account #close-account span {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.user-account #close-account span:hover {
+  color: var(--black);
+}
+
+.user-account .user {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+}
+
+.user-account .user p {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.user-account .user p span {
+  color: var(--red);
+}
+
+.user-account .display-orders {
+  display: flex;
+   padding: 1.5rem;
+  text-align: center;
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
 
 /* Media Queries */
 
