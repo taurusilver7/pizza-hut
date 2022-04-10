@@ -125,14 +125,13 @@ header {
   margin-bottom: 2rem;
 }
 
-.user-account #close-account span {
+.user-account #close-account span i {
   cursor: pointer;
   font-size: 2.5rem;
   color: var(--red);
-  text-decoration: underline;
 }
 
-.user-account #close-account span:hover {
+.user-account #close-account span i:hover {
   color: var(--black);
 }
 
@@ -154,11 +153,43 @@ header {
 
 .user-account .display-orders {
   display: flex;
-   padding: 1.5rem;
+  padding: 2rem;
   text-align: center;
   background-color: var(--light-bg);
   border-radius: 0.5rem;
   margin: 2rem 0;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.user-account .display-orders p {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--light-color);
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.user-account .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.user-account .flex form {
+  flex: 1 1 40rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 2rem;
+}
+
+.user-account .flex form h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 /* Media Queries */
