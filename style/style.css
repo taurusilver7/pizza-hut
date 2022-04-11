@@ -315,4 +315,8 @@ header {
   html {
     font-size: 40%;
   }
+  .my-orders {
+    width: 100%;
+    border-left: 0;
+  }
 }
