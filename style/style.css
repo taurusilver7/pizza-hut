@@ -54,6 +54,23 @@ section {
   padding: 2rem;
 }
 
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--red);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: var(--black);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -113,16 +130,21 @@ header {
 .user-account {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  right: -110%;
+  width: 100%;
+  z-index: 1100;
   background-color: var(--white);
   height: 100vh;
   overflow-y: scroll;
 }
 
+.user-account.active {
+  right: 0;
+}
+
 .user-account #close-account {
   text-align: right;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .user-account #close-account span i {
@@ -153,7 +175,7 @@ header {
 
 .user-account .display-orders {
   display: flex;
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
   background-color: var(--light-bg);
   border-radius: 0.5rem;
@@ -161,6 +183,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .user-account .display-orders p {
@@ -169,13 +192,13 @@ header {
   color: var(--light-color);
   background-color: var(--white);
   border-radius: 0.5rem;
-  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
 }
 
 .user-account .flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .user-account .flex form {
@@ -188,8 +211,75 @@ header {
 .user-account .flex form h3 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
+  color: var(--black);
+}
+
+.user-account .flex form .box {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.my-orders {
+  position: fixed;
+  top: 0;
+  right: -110%;
+  width: 35rem;
+  z-index: 1100;
+  background-color: var(--light-bg);
+  border-left: var(--border);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.my-orders.active {
+  right: 0;
+}
+
+.my-orders #close-orders {
+  text-align: right;
+  margin-bottom: 2.5rem;
+}
+
+.my-orders #close-orders span {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--red);
+}
+.my-orders #close-orders span:hover {
+  color: var(--black);
+}
+
+.my-orders .title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--black);
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.my-orders .box {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  margin: 1.5rem 0;
+}
+.my-orders .box p {
+  margin: 1rem;
+  font-size: 2rem;
+  color: var(--light-color);
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.my-orders .box p span {
 }
 
 /* Media Queries */
@@ -221,6 +311,8 @@ header {
   }
 }
 
-@media (min-width: 425px) {
-  font-size: 40%;
+@media (max-width: 425px) {
+  html {
+    font-size: 40%;
+  }
 }
