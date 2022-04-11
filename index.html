@@ -34,39 +34,38 @@
           <div id="menu-btn" class="fas fa-bars"></div>
           <div id="user-btn" class="fas fa-user"></div>
           <div id="order-btn" class="fas fa-box"></div>
-          <div id="menu-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+          <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
         </div>
       </section>
     <!-- </header> -->
 
     <div class="user-account">
       <section>
-
         <div id="close-account">
-           <span><i class="fa fa-close"></i></span>
-         </div>
+          <span><i class="fa fa-close"></i></span>
+        </div>
 
         <div class="user">
           <p><span>You are not logged-in</span></p>
         </div>
 
         <div class="display-orders">
-          <p>Pizza-1<span>(₹250/- x 1)</span></p>
-          <p>Pizza-2<span>(₹300/- x 2)</span></p>
-          <p>Pizza-3<span>(₹180/- x 1)</span></p>
-          <p>Pizza-4<span>(₹450/- x 3)</span></p>
+          <p>Pizza-1 <span>(₹250/- x 1)</span></p>
+          <p>Pizza-2 <span>(₹300/- x 2)</span></p>
+          <p>Pizza-3 <span>(₹180/- x 1)</span></p>
+          <p>Pizza-4 <span>(₹450/- x 3)</span></p>
         </div>
 
         <!-- Login form -->
 
         <div class="flex">
           <form action="" method="post">
-            <h3>login now</h3>
+            <h3>login</h3>
             <input
               type="emailt"
               name="'email"
               required
-              class="'box"
+              class="box"
               placeholder="Enter your email"
               max-length="50"
             />
@@ -74,57 +73,154 @@
               type="password"
               name="'pass"
               required
-              class="'box"
+              class="box"
               placeholder="Enter your password"
               max-length="20"
             />
             <input type="submit" value="Login" name="login" class="btn" />
-         </form>
+          </form>
 
-            <!-- Register form -->
+          <!-- Register form -->
 
-            <form action="" method="post">
-              <h3>Register now</h3>
-              <input
-                type="text"
-                name="name"
-                required
-                class="box"
-                placeholder="Enter your name"
-                max-length="20"
-              />
-              <input
-                type="email"
-                name="email"
-                required
-                class="box"
-                placeholder="Enter your email"
-                max-length="50"
-              />
-              <input
-                type="password"
-                name="pass"
-                required
-                class="box"
-                placeholder="Enter your password"
-                max-length="20"
-              />
-              <input
-                type="password"
-                name="cpass"
-                required
-                class="box"
-                placeholder="Confirm your password"
-                max-length="20"
-              />
-              <input
-                type="submit"
-                value="Register"
-                name="register"
-                class="btn"
-              />
-            </form>
+          <form action="" method="post">
+            <h3>Register</h3>
+            <input
+              type="text"
+              name="name"
+              required
+              class="box"
+              placeholder="Enter your name"
+              max-length="20"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              class="box"
+              placeholder="Enter your email"
+              max-length="50"
+            />
+            <input
+              type="password"
+              name="pass"
+              required
+              class="box"
+              placeholder="Enter your password"
+              max-length="20"
+            />
+            <input
+              type="password"
+              name="cpass"
+              required
+              class="box"
+              placeholder="Confirm your password"
+              max-length="20"
+            />
+            <input type="submit" value="Register" name="register" class="btn" />
+          </form>
         </div>
+      </section>
+    </div>
+
+    <div class="my-orders">
+      <section>
+        <div id="close-orders">
+          <span><i class="fa fa-close"></i></span>
+        </div>
+
+        <h3 class="title">my orders</h3>
+
+        <div class="box">
+          <p>placed on : <span>06/04/22</span></p>
+          <p>name : <span>Shaik Anas</span></p>
+          <p>number : <span>123456789</span></p>
+          <p>
+            address :
+            <span
+              >Flat No 123, building 02, Jogeswari, Mumbai, India-400104</span
+            >
+          </p>
+          <p>payment : <span>Cash on delivery</span></p>
+          <p>
+            your orders : <span>Pizza 01 ₹250/- x 2, Pizza 02 180/- x 2</span>
+          </p>
+          <p>total price : <span>860/-</span></p>
+          <p>payment status : <span style="color: var(--red);">pending</span> </p>
+        </div>
+
+        <div class="box">
+          <p>placed on : <span>06/04/22</span></p>
+          <p>name : <span>Shaik Anas</span></p>
+          <p>number : <span>123456789</span></p>
+          <p>
+            address :
+            <span
+              >Flat No 123, building 02, Jogeswari, Mumbai, India-400104</span
+            >
+          </p>
+          <p>payment : <span>Cash on delivery</span></p>
+          <p>
+            your orders : <span>Pizza 01 ₹250/- x 2, Pizza 02 180/- x 2</span>
+          </p>
+          <p>total price : <span>860/-</span></p>
+          <p>payment status : <span style="color: var(--red);">pending</span> </p>
+        </div>
+
+        <div class="box">
+          <p>placed on : <span>06/04/22</span></p>
+          <p>name : <span>Shaik Anas</span></p>
+          <p>number : <span>123456789</span></p>
+          <p>
+            address :
+            <span
+              >Flat No 123, building 02, Jogeswari, Mumbai, India-400104</span
+            >
+          </p>
+          <p>payment : <span>Cash on delivery</span></p>
+          <p>
+            your orders : <span>Pizza 01 ₹250/- x 2, Pizza 02 180/- x 2</span>
+          </p>
+          <p>total price : <span>860/-</span></p>
+          <p>payment status : <span style="color: var(--red);">pending</span> </p>
+        </div>
+
+        <div class="box">
+          <p>placed on : <span>06/04/22</span></p>
+          <p>name : <span>Shaik Anas</span></p>
+          <p>number : <span>123456789</span></p>
+          <p>
+            address :
+            <span
+              >Flat No 123, building 02, Jogeswari, Mumbai, India-400104</span
+            >
+          </p>
+          <p>payment : <span>Cash on delivery</span></p>
+          <p>
+            your orders : <span>Pizza 01 ₹250/- x 2, Pizza 02 180/- x 2</span>
+          </p>
+          <p>total price : <span>860/-</span></p>
+          <p>payment status : <span style="color: var(--red);">pending</span> </p>
+        </div>
+
+        <div class="box">
+          <p>placed on : <span>06/04/22</span></p>
+          <p>name : <span>Shaik Anas</span></p>
+          <p>number : <span>123456789</span></p>
+          <p>
+            address :
+            <span
+              >Flat No 123, building 02, Jogeswari, Mumbai, India-400104</span
+            >
+          </p>
+          <p>payment : <span>Cash on delivery</span></p>
+          <p>
+            your orders : <span>Pizza 01 ₹250/- x 2, Pizza 02 180/- x 2</span>
+          </p>
+          <p>total price : <span>860/-</span></p>
+          <p>payment status : <span style="color: var(--red);">pending</span> </p>
+        </div>
+
+        
       </section>
     </div>
 
