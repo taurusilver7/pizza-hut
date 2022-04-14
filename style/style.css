@@ -280,8 +280,68 @@ header {
 }
 
 .my-orders .box p span {
+  color: var(--black);
 }
 
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  width: 35rem;
+  z-index: 1100;
+  background-color: var(--light-bg);
+  border-left: var(--border);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.shopping-cart.active {
+  right: 0;
+}
+
+.shopping-cart #close-cart {
+  text-align: right;
+  margin-bottom: 2.5rem;
+}
+.shopping-cart #close-cart span {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--red);
+}
+.shopping-cart #close-cart span:hover {
+  color: var(--black);
+}
+
+.shopping-cart .box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  margin: 1.5rem 0;
+}
+
+.shopping-cart .box .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--red);
+}
+
+.shopping-cart .box img {
+  width: 7rem;
+}
+
+.shopping-cart .box .content p {
+  font-size: 1.8rem;
+  color: var(--light-color);
+}
+.shopping-cart .box .content p span {
+  color: var(--red);
+}
 /* Media Queries */
 
 @media (max-width: 768px) {
