@@ -383,7 +383,36 @@ section {
   color: var(--white);
 }
 
+@keyframes fadeRight {
+  0% {
+    transform: translateX(-5rem);
+  }
+}
 
+.home-bg {
+  background: url(../img/home-bg-2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-bg .home .slide-container {
+  margin-top: 12rem;
+}
+
+.home-bg .home .slide-container .slide {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.home-bg .home .slide-container .slide.active{
+   display: flex;
+}
+
+.home-bg .home .slide-container .slide .image {
+  flex: 1 1 40rem;
+  animation: fadeRight 0.4s linear;
+}
 
 /* Media Queries */
 
