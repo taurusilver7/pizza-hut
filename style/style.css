@@ -331,11 +331,15 @@ section {
 
 .shopping-cart .box .fa-times {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: var(--red);
+}
+
+.shopping-cart .box .fa-times:hover {
+  color: var(--black);
 }
 
 .shopping-cart .box img {
@@ -348,6 +352,35 @@ section {
 }
 .shopping-cart .box .content p span {
   color: var(--red);
+}
+
+.shopping-cart .box .content form {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.shopping-cart .box .content form .qty {
+  border: var(--border);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--black);
+  width: 8rem;
+}
+
+.shopping-cart .box .content form .fa-edit {
+  width: 5.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  color: var(--black);
+}
+
+.shopping-cart .box .content form .fa-edit:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* Media Queries */
@@ -384,6 +417,10 @@ section {
     font-size: 40%;
   }
   .my-orders {
+    width: 100%;
+    border-left: 0;
+  }
+  .shopping-cart {
     width: 100%;
     border-left: 0;
   }
