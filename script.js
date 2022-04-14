@@ -40,4 +40,6 @@ document.querySelector("#close-cart").onclick = () => {
 
 document.window.onscroll = () => {
   navbar.classList.remove("active");
+  myOrders.classList.remove("active");
+  cart.classList.remove("active");
 };
