@@ -1,6 +1,7 @@
-let navbar = document.querySelector(".header .flex .navbar");
-let account = document.querySelector(".user-account");
-let myOrders = document.querySelector(".my-orders");
+const navbar = document.querySelector(".header .flex .navbar");
+const account = document.querySelector(".user-account");
+const myOrders = document.querySelector(".my-orders");
+const cart = document.querySelector(".shopping-cart");
 
 // menu navbar burger button.
 document.querySelector("#menu-btn").onclick = () => {
@@ -25,6 +26,16 @@ document.querySelector("#order-btn").onclick = () => {
 // Order display hidden
 document.querySelector("#close-orders").onclick = () => {
   myOrders.classList.remove("active");
+};
+
+// cart open on cart-btn in navbar
+document.querySelector("#cart-btn").onclick = () => {
+  cart.classList.toggle("active");
+};
+
+// cart hidden function.
+document.querySelector("#close-cart").onclick = () => {
+  cart.classList.remove("active");
 };
 
 document.window.onscroll = () => {
