@@ -40,18 +40,21 @@
 }
 
 html {
-  font-size: 70%;
+  font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding-top: 6.5rem;
+  scroll-padding-top: 7.5rem;
 }
 
 body {
   background: var(--light-bg);
+  overflow-x: hidden;
 }
 
 section {
   padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .btn {
@@ -65,13 +68,14 @@ section {
   background-color: var(--red);
   cursor: pointer;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .btn:hover {
   background-color: var(--black);
 }
 
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -199,6 +203,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: flex-start;
 }
 
 .user-account .flex form {
@@ -342,6 +347,7 @@ header {
 .shopping-cart .box .content p span {
   color: var(--red);
 }
+
 /* Media Queries */
 
 @media (max-width: 768px) {
