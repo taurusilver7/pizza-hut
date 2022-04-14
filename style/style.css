@@ -319,7 +319,7 @@ header {
   gap: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
-  margin: 1.5rem 0;
+  margin: 1.7rem 0;
 }
 
 .shopping-cart .box .fa-times {
@@ -336,7 +336,7 @@ header {
 }
 
 .shopping-cart .box .content p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--light-color);
 }
 .shopping-cart .box .content p span {
