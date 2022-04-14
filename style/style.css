@@ -277,8 +277,8 @@ section {
   margin: 1.5rem 0;
 }
 .my-orders .box p {
-  margin: 1rem;
-  font-size: 2rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
   color: var(--light-color);
   line-height: 1.5;
   text-transform: capitalize;
@@ -325,6 +325,8 @@ section {
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   margin: 1.7rem 0;
+  padding: 1.5rem;
+  background-color: var(--white);
 }
 
 .shopping-cart .box .fa-times {
