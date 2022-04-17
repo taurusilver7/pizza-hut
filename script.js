@@ -38,14 +38,14 @@ document.querySelector("#close-cart").onclick = () => {
   cart.classList.remove("active");
 };
 
-document.window.onscroll = () => {
+window.onscroll = () => {
   navbar.classList.remove("active");
   myOrders.classList.remove("active");
   cart.classList.remove("active");
 };
 
 let slides = document.querySelectorAll(
-  ".home-bg #home .slide-container .slide"
+  ".home-bg .home .slide-container .slide"
 );
 let index = 0;
 
