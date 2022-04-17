@@ -10,9 +10,9 @@ A responsive single page Online pizza store using HTML, CSS, JavaScript.
 - A responsive header with toggle menu effect using javascript.
 - A responsive account section with login and register forms.
 - A responsive order and shopping cart sidebar.
-  responsive home section with slider using vanilla javascript.
-  responsive about section using css grid.
-  responsive menu section using css grid.
+- A responsive home section with slider using vanilla javascript.
+- A responsive About section using CSS grid style.
+- A responsive Menu section using CSS grid style.
   responsive orders section.
   responsive faq accordion section using.
   responsive footer section using css grid.
