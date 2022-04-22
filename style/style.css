@@ -526,6 +526,7 @@ section {
 
 .menu .box-container .box img {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .menu .box-container .box .price {
@@ -546,12 +547,22 @@ section {
 .menu .box-container .box .name {
   font-size: 2rem;
   color: var(--black);
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .menu .box-container .box form {
   display: flex;
   gap: 1rem;
+}
+
+.menu .box-container .box form .qty {
+  width: 8rem;
+  border: var(--border);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--black);
 }
 
 /* Media Queries */
