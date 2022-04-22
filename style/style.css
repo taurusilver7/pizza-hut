@@ -639,6 +639,7 @@ section {
   background: var(--black);
   color: var(--white);
   cursor: pointer;
+  text-transform: capitalize;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -684,14 +685,14 @@ section {
 }
 
 .footer .box-container .box i {
-  height: 6rem;
-  width: 6rem;
-  line-height: 6rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
   font-size: 2rem;
   color: var(--white);
   background-color: var(--red);
   border-radius: 50%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .footer .box-container .box h3 {
