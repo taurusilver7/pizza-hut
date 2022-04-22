@@ -57,6 +57,14 @@ section {
   max-width: 1200px;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
 .btn {
   display: block;
   width: 100%;
@@ -465,6 +473,10 @@ section {
 .home-bg .home .slide-container .slide .content .fa-angle-right:hover {
   background-color: var(--red);
   color: var(--white);
+}
+
+.about .box-container {
+  
 }
 
 /* Media Queries */
