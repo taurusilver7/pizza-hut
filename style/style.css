@@ -574,18 +574,22 @@ section {
 
 .orders form .display-orders {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
+  background-color: var(--light-bg);
   justify-content: center;
   margin-bottom: 2rem;
-  gap: 1.5;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
 }
 
 .orders form .display-orders p {
   font-size: 1.8rem;
   color: var(--light-color);
-  background-color: var(--light-bg)
+  background-color: var(--white);
   padding: 1rem 3rem;
   border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
 }
 
 .orders form .display-order p span {
@@ -602,6 +606,25 @@ section {
 .orders form .flex .inputBox {
   width: 49%;
 }
+
+.orders form .flex .inputBox span {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: var(--light-color);
+  padding-left: 1rem;
+}
+
+.orders form .flex .inputBox .box {
+  width: 100%;
+  background-color: var(--light-bg);
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.orders form .flex .inputBox
 
 /* Media Queries */
 
@@ -635,7 +658,7 @@ section {
     font-size: 4rem;
     word-spacing: 0rem;
   }
-  .order form .flex .inputBox {
+  .orders form .flex .inputBox {
     width: 100%;
   }
 }
