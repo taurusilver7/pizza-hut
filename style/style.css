@@ -507,6 +507,53 @@ section {
   color: var(--light-color);
 }
 
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.menu .box-container .box {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.menu .box-container .box img {
+  width: 100%;
+}
+
+.menu .box-container .box .price {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.menu .box-container .box .price span {
+  font-size: 2rem;
+}
+
+.menu .box-container .box .name {
+  font-size: 2rem;
+  color: var(--black);
+  margin: 1.5rem 0;
+}
+
+.menu .box-container .box form {
+  display: flex;
+  gap: 1rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
