@@ -565,6 +565,10 @@ section {
   color: var(--black);
 }
 
+.order form {
+  display: grid;
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -605,6 +609,7 @@ section {
 @media (max-width: 425px) {
   html {
     font-size: 40%;
+    scroll-padding-top: 9.5rem;
   }
   .my-orders {
     width: 100%;
